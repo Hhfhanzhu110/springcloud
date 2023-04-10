@@ -1,0 +1,16 @@
+server:
+  port: 9090
+spring:
+  application:
+    name: order-server
+  cloud:
+    nacos:
+      server-addr: 192.168.234.122:8050
+      discovery:
+        username: nacos
+        password: nacos
+        namespace: public
+ribbon:
+  eager-load:
+    enabled: true
+    clients: stock-server
