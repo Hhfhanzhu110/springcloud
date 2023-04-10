@@ -1,5 +1,5 @@
 server:
-  port: 9090
+  port: 9093
 spring:
   application:
     name: order-server
@@ -13,4 +13,4 @@ spring:
 ribbon:
   eager-load:
     enabled: true
-    clients: stock-server
+    clients: order-server
